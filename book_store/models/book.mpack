@@ -1,0 +1,21 @@
+import "author.mpack"
+import "user.mpack"
+import "core:time"
+
+type Book {
+    id:string 1
+    name:string 2
+    genre:string 3
+    author:Author 4
+    publish_date:core.DateTime 5
+    created_at:core.DateTime 6
+    used_by:map(string,User) 7
+    status:BookStatus 8
+}
+
+type BookStatus enum {
+    unknown 0
+    stock 1
+    taken 2
+    removed 3
+}

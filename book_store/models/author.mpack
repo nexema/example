@@ -1,0 +1,11 @@
+import "core:time"
+
+type Author {
+    id:string 1
+    name:string 2
+    last_name:string 3
+    birth_date?:core.Date 4
+    tags:list(string) 5
+    visible:boolean 6 @[("obsolete":true)]
+    enabled:boolean 7 = true
+}

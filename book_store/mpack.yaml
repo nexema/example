@@ -1,0 +1,11 @@
+name: example.com/book_store
+author: ImTheAuthor
+version: 1.0.0
+
+dependencies:
+  - core: latest
+
+generators:
+  - dart:
+      options:
+        packageName: book_store

@@ -1,0 +1,21 @@
+import "../models/book.mpack"
+
+type CreateBookRequest {
+    book:Book 1
+}
+
+type DeleteBookRequest {
+    book_id:string 1
+}
+
+type UpdateBookRequest {
+    book_id:string 1
+    fields:UpdateBookRequestFields 2
+}
+
+type UpdateBookRequestFields union {
+    name:string 1
+    status:BookStatus 2
+    author:Author 3
+    genre:string 4
+}
