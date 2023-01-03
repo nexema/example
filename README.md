@@ -1,2 +1,2 @@
 # example
-An example project used to test messagepack-schema
+An example project used to test nexema-tool
